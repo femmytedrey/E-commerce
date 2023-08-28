@@ -7,26 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navBar">
-        <div class="logo">
-            <img src="images/logo.svg" alt="">
-        </div>
-        <ul>
-            <li>Collections</li>
-            <li>Men</li>
-            <li>Women</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-        <div class="cart_avatar">
-            <img src="images/icon-cart.svg" alt="" class="cart">
-            <img src="images/image-avatar.png" alt="" class="avatar">
-        </div>
-    </nav>
+    <div class="navcontainer">
+        <nav class="navBar">
+            <div class="logo">
+                <img src="images/logo.svg" alt="" class="pagelogo">
+            </div>
+            <ul>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="cart_avatar">
+                
+                <svg class="svgnav" width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path id = "svgcolor" d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg>
+                <img src="images/image-avatar.png" alt="" class="avatar">
+            </div>
+        </nav>
+    </div>
 
     <div class="container">
         <div class="left">
-            <div class="lettop">
+            <div class="lefttop">
                 <img src="images/image-product-1.jpg" alt="" class="product1">
                 <img src="images/image-product-2.jpg" alt="" class="product2">
                 <img src="images/image-product-3.jpg" alt="" class="product3">
@@ -40,8 +43,34 @@
             </div>
         </div>
         <div class="right">
-            <div class="righttop"></div>
-            <div class="rightbottom"></div>
+            <div class="righttop">
+                <p class="company">SNEAKER COMPANY</p>
+                <P class="sneakersName">Fall Limited Edition Sneakers</P>
+                <p class="sneakersdescription">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+            </div>
+            <div class="rightbottom">
+                <div class="rightbottomTop">
+                    <div class="pricecontainer">
+                        <div class="pricecontainerleft">
+                            <p class="price">$125.00</p>
+                            <p class="percentage">50%</p>
+                        </div>
+                        <div class="previousprice">
+                            <p class="pastprice">$250.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightbottomDown">
+                    <div class="rightbottomDownLeft">
+                        <button class="minus-btn" id="minus">-</button>
+                        <input type="text" id="quantity" value="1" />
+                        <button class="plus-btn" id="plus">+</button>
+                    </div>
+                    <div class="rightbottomDownRight">
+                        <button class = "AddToCart"><svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path id = "svgcolor1" d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg>Add to cart</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
