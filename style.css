@@ -436,3 +436,34 @@ svg{
     
 }
 
+.cartview{
+    display: flex;
+    position: absolute;
+    height: 250px;
+    width: 400px;
+    background: white;
+    flex-direction: column;
+}
+
+.cartviewtop{
+    height: 33.33%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.cartviewmiddle{
+    height: 33.33%;
+    width: 100%;
+}
+.cartviewimage{
+    height: 60px;
+    width: 60px;
+    border-radius: 6px;
+}
+
+.cartviewbottom{
+    height: 33.33%;
+    width: 100%;
+}
+
