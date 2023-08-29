@@ -186,6 +186,18 @@ img.avatar:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 100px;
+    display: none;
+}
+.imageoverlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    /* background: yellow; */
 }
 .leftcircle{
     height: 50px;
@@ -195,6 +207,10 @@ img.avatar:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    left: -25px;
+    top: 220px;
+    z-index: 10;
 }
 .rightcircle{
     height: 50px;
@@ -204,19 +220,63 @@ img.avatar:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    right: -25px;
+    top: 220px;
 }
-.preview{
+.imagepreview{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    border-radius: 20px;
+}
+.preview1{
     height: 500px;
     width: 500px;
     border-radius: 20px;
-    position: relative;
+    /* position: relative; */
 }
-.close{
+.preview2{
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+    display: none
+    /* position: relative; */
+}
+.preview3{
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+    display: none
+    /* position: relative; */
+}
+.preview4{
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+    display: none
+    /* position: relative; */
+}
+svg.close{
     position: absolute;
-    top: 100px;
-    right: 525px;
+    top: -45px;
+    right: -15px;
     height: 22px;
     width: 21px;
+}
+#close{
+    fill: white;
+    height: 22px;
+    width: 21px;
+}
+
+.imagethumnails{
+    display: flex;
+    height: auto;
+    width: 500px;
+    /* background: blue; */
+    padding: 30px 40px 20px 40px;
+    justify-content: space-around;
 }
 .right{
     width: 55%;
