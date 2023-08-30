@@ -94,8 +94,13 @@ img.avatar:hover{
     width: 100%;
     height: 650px;
     background: green;
-    padding: 70px 180px 0px 180px;
+    /* padding: 70px 180px 0px 180px; */
     position: relative;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    width: 1250px
 }
 .left{
     width: 50%;
