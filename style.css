@@ -580,9 +580,14 @@ svg{
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    /* display: none */
+    /* display: none; */
 }
-
+.mobilearrowleft{
+    display: none;
+}
+.mobilearrowright{
+    display: none;
+}
 @media(max-width: 1150px){
     .lefttop{
         height: 75%;
@@ -743,11 +748,175 @@ svg{
     .container{
         /* max-width: 100%; */
         /* overflow: hidden; */
-        padding-left: 70px;
-        padding-right: 70px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
     }
+
     .card{
         flex-direction: column;
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+        height: 350px;
+        margin-right: 50px;
+        background: purple;
+    }
+    .lefttop{
+        height: 100%;
+        width: 100%;
+        background: brown;
+        position: relative;
+    }
+    .product1{
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+        /* display: none; */
+    }
+    .product2{
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+        display: none;
+    }
+    .product3{
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+        display: none;
+    }
+    .product4{
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+        display: none;
+    }
+    .leftbottom{
+        display: none
+    }
+    .right{
+        width: 100%;
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .righttop{
+        padding-top: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: flex-start;
+        height: auto;
+    }
+    .company{
+        padding-bottom: 10px;
+    }
+    .sneakersName{
+        font-size: 30px;
+        padding: 0px;
+        line-height: 30px;
+    }
+    .sneakersdescription{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .rightbottomTop{
+        display: flex;
+        height: 70px;
+        padding: 0px 20px 0 20px
+
+    }
+    .pricecontainer{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+    }
+    .previousprice{
+        height: 100%;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background: blue;
+    }
+    .rightbottomDown{
+        flex-direction: column;
+        padding: 0px 20px 0px 20px;
+    }
+    .rightbottomDownLeft{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .rightbottomDownRight{
+        width: 100%;
+    }
+    .AddToCart{
+        width: 100%;
+    }
+    .AddToCart:hover{
+        width: 100%;
+    }
+    .mobilearrowleft{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background: white;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 42%;
+        left: 10px;
+    }
+    .mobilearrowright{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background: white;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 42%;
+        right: 10px;
+    }
+    .cartview{
+        display: flex;
+        position: absolute;
+        height: 240px;
+        width: 96%;
+        background: white;
+        flex-direction: column;
+        border-radius: 10px;
+        top: 0px;
+        left: 10px;
+        box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.3);
+        display: block;
+        z-index: 35;
+        /* margin: 0px 135px 0px 135px; */
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+    .emptycart{
+        display: flex;
+        background: pink;
+        border-radius: 10px;
+        /* display: none; */
+        height: 70%;
+
+    }
+    .checkout{
+        font-size: 22px;
+        font-weight: 700;
     }
 
     /* .container{
@@ -759,3 +928,59 @@ svg{
     } */
 }
 
+@media (max-width: 1000px) and (min-width: 600px){
+    .left{
+        width: 100%;
+        height: 600px;
+        margin-right: 50px;
+        background: purple;
+    }
+
+    .rightbottomTop{
+        display: flex;
+        height: 90px;
+        padding: 0px 20px 0 20px;
+        background: gray;
+
+    }
+    .pricecontainer{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+    }
+    .previousprice{
+        height: 100%;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background: blue;
+    }
+    .rightbottomDown{
+        flex-direction: column;
+        padding: 0px 20px 0px 20px;
+        background: purple;
+        height: 170px
+    }
+    .rightbottomDownLeft{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        height: 75px;
+    }
+    .rightbottomDownRight{
+        width: 100%;
+        height: 75px;
+    }
+    .AddToCart{
+        width: 100%;
+    }
+    .AddToCart:hover{
+        width: 100%;
+    }
+    .cartview{
+        height: 300px;
+    }
+}
