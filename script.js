@@ -67,6 +67,6 @@ updateCarousel();
 }
 
 if (window.innerWidth <= 1000){
-    const pageoverlay = document.querySelector('.pageoverlay');
-    const
+    
 }
+    
