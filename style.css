@@ -165,6 +165,7 @@ img.avatar:hover{
     height: 75%;
     width: auto;
     background: brown;
+    overflow: hidden;
 }
 .product1{
     height: 100%;
@@ -176,19 +177,19 @@ img.avatar:hover{
     height: 100%;
     width: 85%;
     border-radius: 20px;
-    display: none;
+    /* display: none; */
 }
 .product3{
     height: 100%;
     width: 85%;
     border-radius: 20px;
-    display: none;
+    /* display: none; */
 }
 .product4{
     height: 100%;
     width: 85%;
     border-radius: 20px;
-    display: none;
+    /* display: none; */
 }
 .leftbottom{
     height: 25%;
@@ -606,6 +607,7 @@ svg{
         height: 75%;
         width: 100%;
         background: brown;
+        /* overflow: hidden; */
     }
     .product1{
         height: 100%;
@@ -617,19 +619,19 @@ svg{
         height: 100%;
         width: 100%;
         border-radius: 20px;
-        display: none;
+        /* display: none; */
     }
     .product3{
         height: 100%;
         width: 100%;
         border-radius: 20px;
-        display: none;
+        /* display: none; */
     }
     .product4{
         height: 100%;
         width: 100%;
         border-radius: 20px;
-        display: none;
+        /* display: none; */
     }
     .leftbottom{
         height: 25%;
@@ -817,6 +819,7 @@ svg{
         width: 100%;
         background: brown;
         position: relative;
+        overflow: hidden;
     }
     .product1{
         height: 100%;
@@ -828,22 +831,23 @@ svg{
         height: 100%;
         width: 100%;
         border-radius: 0px;
-        display: none;
+        /* display: none; */
     }
     .product3{
         height: 100%;
         width: 100%;
         border-radius: 0px;
-        display: none;
+        /* display: none; */
     }
     .product4{
         height: 100%;
         width: 100%;
         border-radius: 0px;
-        display: none;
+        /* display: none; */
     }
+    
     .leftbottom{
-        display: none
+        display: none;
     }
     .right{
         width: 100%;
@@ -922,6 +926,8 @@ svg{
         align-items: center;
         top: 42%;
         left: 10px;
+        border: none;
+        z-index: 100;
     }
     .mobilearrowright{
         height: 50px;
@@ -934,6 +940,7 @@ svg{
         align-items: center;
         top: 42%;
         right: 10px;
+        border: none;
     }
     .cartview{
         display: flex;
@@ -1032,10 +1039,14 @@ svg{
     }
     .closemenu{
         margin-right: 20px;
-        margin-left: 0px
+        margin-left: 0px;
         cursor: pointer;
         display: none;
         z-index: 50;
         position: fixed;
     }
+
+    
 }
+
+
