@@ -11,6 +11,14 @@ const overlayprevious = document.querySelector(".leftcircle");
 const overlaynext = document.querySelector(".rightcircle");
 const overelayslide = document.querySelectorAll(".pageoverlay .product");
 const closeoverlay = document.getElementById("close");
+const thumbnailoverlay = document.querySelectorAll('.pageoverlay .overlay')
+const thumbnail1 = document.querySelectorAll('.leftbottom .overlay');
+const lefttopProducts = document.querySelectorAll('.lefttop .product');
+
+// const thmbnail2 = document.querySelector('.thumbnail2');
+// const thmbnail3 = document.querySelector('.thumbnail3');
+// const thmbnail4 = document.querySelector('.thumbnail4');
+
 
 hamburger.addEventListener('click', () => {
     if (window.innerWidth <= 1000) { // Check if screen width is 1000px or less
@@ -72,7 +80,7 @@ updateCarousel();
 }
 
 if (window.innerWidth >= 1000){
-    slides.forEach((slide, index) => {
+    slides.forEach((slide) => {
         
         slide.addEventListener('click', () => {
             pageoverlay.style.display = 'block';
@@ -99,6 +107,49 @@ if (window.innerWidth >= 1000){
         }
         updateCarousel1();
     })
+
+    thumbnail1.forEach((thumbnail, index) => {
+        thumbnail.addEventListener('click', () => {
+          // Hide all product images in the lefttop section
+          thumbnail1.forEach((outline) =>{
+            outline.style.border = 'none';
+          });
+
+          thumbnail.style.border = '3px solid #FF7D1B';
+
+
+          lefttopProducts.forEach((product) => {
+            product.style.display = 'none';
+          });
+      
+          // Display the corresponding product image based on the clicked thumbnail's index
+          lefttopProducts[index].style.display = 'block';
+        });
+      });
+        
+
+    thumbnailoverlay.forEach((thumbnailoverlays, index) => {
+        thumbnailoverlays.setAttribute('data-product-index', index);
+        thumbnailoverlays.addEventListener('click', () => {
+            const productIndex = thumbnailoverlays.getAttribute('data-product-index');
+            displayProductOverlayInOverlay(productIndex);
+            thumbnailoverlay.forEach((outline) =>{
+                outline.style.border = 'none';
+            })
+            thumbnailoverlays.style.border = '3px solid #FF7D1B';
+        });
+    });
+
+    function displayProductOverlayInOverlay(productIndex) {
+    currentIndex1 = parseInt(productIndex);
+    updateCarousel1();
+    }
+
+
+    
+
+   
+    
 
 
 
