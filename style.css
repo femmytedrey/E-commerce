@@ -33,10 +33,19 @@ nav{
     display: flex;
     align-items: center;
 }
+.menuIconcontainer{
+    width: 50px;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
 .hamburger{
     margin-right: 20px;
     cursor: pointer;
-    display: none;
+    /* display: none; */
 }
 .closemenu{
     margin-right: 20px;
@@ -56,6 +65,11 @@ nav ul {
     height: 100%;
     
 }
+.ulcontainertop{
+    flex: 1;
+    background: blue;
+    height: 100%;
+}
 
 nav ul li{
     display: flex;
@@ -73,7 +87,6 @@ nav ul li:hover{
 
 }
 .cart_avatar{
-    flex: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -661,18 +674,31 @@ svg{
         align-items: center;
         order: -1;
     }
+    .menuIconcontainer{
+        width: 50px;
+        height: 100%;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .hamburger{
         margin-right: 20px;
         cursor: pointer;
         display: block;
         z-index: 50;
+        /* position: fixed; */
     }
+
     .closemenu{
         margin-right: 20px;
+        margin-left: 30px;
         cursor: pointer;
         display: none;
         z-index: 50;
+        position: fixed;
     }
+    
     .pagelogo{
         cursor: pointer;
     }
@@ -681,14 +707,15 @@ svg{
         display: block;
         width: 70%;
         justify-content: space-around;
-        height: 100vh;
+        height: cover;
         position: absolute;
         top: 0;
         left: -50px;
-        z-index: 30;
-        padding: 100px 0px 0px 50px ;
+        z-index: 31;
+        padding: 100px 0px 0px 80px ;
         background: white;
         display: none;
+        position: fixed;
         
     }
     .ulcontainer{
@@ -700,7 +727,27 @@ svg{
         top: 0px;
         z-index: 20;
         display: none;
+        position: fixed;
     }
+    .ulcontainertop{
+        display: block;
+        width: 70%;
+        justify-content: space-around;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        z-index: 30;
+        padding: 100px 0px 0px 50px ;
+        background: transparent;
+        /* display: none; */
+    }
+    
+
+
+
+
+    
     
     nav ul li{
         height: max-content;
@@ -982,5 +1029,13 @@ svg{
     }
     .cartview{
         height: 300px;
+    }
+    .closemenu{
+        margin-right: 20px;
+        margin-left: 0px
+        cursor: pointer;
+        display: none;
+        z-index: 50;
+        position: fixed;
     }
 }
