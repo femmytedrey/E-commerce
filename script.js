@@ -6,6 +6,11 @@ const carousel = document.querySelector(".lefttop");
 const slides = document.querySelectorAll(".lefttop .product");
 const previous = document.querySelector(".mobilearrowleft");
 const next = document.querySelector(".mobilearrowright");
+const pageoverlay = document.querySelector(".pageoverlay");
+const overlayprevious = document.querySelector(".leftcircle");
+const overlaynext = document.querySelector(".rightcircle");
+const overelayslide = document.querySelectorAll(".pageoverlay .product");
+const closeoverlay = document.getElementById("close");
 
 hamburger.addEventListener('click', () => {
     if (window.innerWidth <= 1000) { // Check if screen width is 1000px or less
@@ -66,7 +71,47 @@ updateCarousel();
 
 }
 
-if (window.innerWidth <= 1000){
+if (window.innerWidth >= 1000){
+    slides.forEach((slide, index) => {
+        
+        slide.addEventListener('click', () => {
+            pageoverlay.style.display = 'block';
+        });
+    });
+    closeoverlay.addEventListener('click', () =>{
+        pageoverlay.style.display = 'none';
+    })
+    let currentIndex1 = 0;
+    overlayprevious.addEventListener('click', () =>{
+        if (currentIndex1 > 0) {
+            currentIndex1--;
+        } else {
+            currentIndex1 = overelayslide.length - 1;
+        }
+        updateCarousel1();
+    });
+
+    overlaynext.addEventListener('click', () => {
+        if(currentIndex1 < overelayslide.length - 1){
+            currentIndex1++;
+        } else {
+            currentIndex1 = 0;
+        }
+        updateCarousel1();
+    })
+
+
+
+    const updateCarousel1 = (() => {
+        overelayslide.forEach((slide, index) => {
+            if (index === currentIndex1) {
+                slide.style.display = "block";
+            } else {
+                slide.style.display = "none";
+            }
+        });
     
+    });
+    updateCarousel1();
 }
     

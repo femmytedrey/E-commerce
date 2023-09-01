@@ -273,7 +273,7 @@ img.avatar:hover{
     position: absolute;
     left: -25px;
     top: 220px;
-    z-index: 10;
+    cursor: pointer;
 }
 .rightcircle{
     height: 50px;
@@ -286,6 +286,7 @@ img.avatar:hover{
     position: absolute;
     right: -25px;
     top: 220px;
+    cursor: pointer;
 }
 .imagepreview{
     height: 500px;
@@ -331,6 +332,7 @@ svg.close{
     fill: white;
     height: 22px;
     width: 21px;
+    cursor: pointer;
 }
 
 .imagethumnails{
