@@ -232,7 +232,7 @@ addToCart.addEventListener('click', () =>{
         quantityNumber.textContent = quantity;
         const total = price * quantity;
         const formattedTotal = total.toFixed(2);
-        quantityPrice.textContent = formattedTotal;
+        quantityPrice.textContent = "$" + formattedTotal;
         cartnum.style.display = 'block';
     }else{
         console.error("Invalid input for quantity");
