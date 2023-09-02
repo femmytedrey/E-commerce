@@ -190,11 +190,9 @@ let quantity = 1;
 cartIcon.addEventListener('click', () => {
     if (!isCartVisible) {
         cartbox.style.display = 'block';
-        previous.style.display = 'none';
         isCartVisible = true;
     } else {
         cartbox.style.display = 'none';
-        previous.style.display = 'block';
         isCartVisible = false;
     }
 
@@ -251,3 +249,19 @@ deleteCart.addEventListener('click', () =>{
 checkout.addEventListener('click', () =>{
     alert("Coming soon!!! check back later");
 });
+
+
+
+if (window.innerWidth <= 1000){
+    let isCartVisible = false;
+    cartIcon.addEventListener('click', () => {
+        if (!isCartVisible) {
+            previous.style.display = 'none';
+            isCartVisible = true;
+        } else {
+            previous.style.display = 'block';
+            isCartVisible = false;
+        }
+        
+    });
+}

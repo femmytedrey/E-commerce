@@ -13,23 +13,27 @@ body{
 .navcontainer{
     width: 100%;
     height: 100px;
-    background: grey;
+    /* background: grey; */
     padding: 0px 45px 0px 45px;
     margin-bottom: 0px;
     display: flex;
     justify-content: center;
+    margin-bottom: 70px;
+    
 }
 nav{
     width: 1300px;
     height: 100%;
-    background: teal;
+    /* background: teal; */
     display: flex;
     align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    
 }
 .logo{
     width: 15%;
     height: 100%;
-    background: yellow;
+    /* background: yellow; */
     display: flex;
     align-items: center;
 }
@@ -67,7 +71,7 @@ nav ul {
 }
 .ulcontainertop{
     flex: 1;
-    background: blue;
+    /* background: blue; */
     height: 100%;
 }
 
@@ -153,7 +157,6 @@ img.avatar:hover{
     display: flex;
     width: 100%;
     height: 650px;
-    background: green;
     padding: 0px 50px 0px 50px;
     position: relative;
     justify-content: center;
@@ -166,12 +169,10 @@ img.avatar:hover{
     width: 50%;
     height: 100%;
     margin-right: 50px;
-    background: purple;
 }
 .lefttop{
     height: 75%;
     width: auto;
-    background: brown;
     overflow: hidden;
 }
 .product1{
@@ -357,7 +358,6 @@ svg.close{
 .righttop{
     height: 55%;
     width: 100%;
-    background: palevioletred;
     padding-right: 100px;
     padding-top: 60px;
     display: flex;
@@ -386,7 +386,6 @@ svg.close{
 .rightbottomTop{
     height: 35%;
     width: 100%;
-    background: powderblue;
 }
 .pricecontainer{
     display: flex;
@@ -428,13 +427,12 @@ svg.close{
 .rightbottomDown{
     height: 65%;
     width: 100%;
-    background: teal;
     display: flex;
 }
 .rightbottomDownLeft{
     height: 53px;
     width: 25%;
-    background: white;
+    background: rgb(234, 234, 234);
     border-radius: 8px;
     display: flex;
     margin-right: 15px;
@@ -624,7 +622,6 @@ svg{
     .lefttop{
         height: 75%;
         width: 100%;
-        background: brown;
         /* overflow: hidden; */
     }
     .product1{
@@ -671,7 +668,6 @@ svg{
     .navcontainer{
         width: 100%;
         height: 75px;
-        background: grey;
         padding: 0px 10px 0px 10px;
         margin-bottom: 0px;
         display: flex;
@@ -681,15 +677,14 @@ svg{
     nav{
         width: 90%;
         height: 100%;
-        background: teal;
         display: flex;
         align-items: center;
         position: relative;
+        border-bottom: none;
     }
     .logo{
         width: 15%;
         height: 100%;
-        background: yellow;
         display: flex;
         align-items: center;
         order: -1;
@@ -830,12 +825,10 @@ svg{
         width: 100%;
         height: 350px;
         margin-right: 50px;
-        background: purple;
     }
     .lefttop{
         height: 100%;
         width: 100%;
-        background: brown;
         position: relative;
         overflow: hidden;
     }
@@ -980,7 +973,6 @@ svg{
     }
     .emptycart{
         display: flex;
-        background: pink;
         border-radius: 10px;
         /* display: none; */
         height: 70%;
@@ -1005,14 +997,12 @@ svg{
         width: 100%;
         height: 600px;
         margin-right: 50px;
-        background: purple;
     }
 
     .rightbottomTop{
         display: flex;
         height: 90px;
         padding: 0px 20px 0 20px;
-        background: gray;
 
     }
     .pricecontainer{
@@ -1028,12 +1018,10 @@ svg{
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        background: blue;
     }
     .rightbottomDown{
         flex-direction: column;
         padding: 0px 20px 0px 20px;
-        background: purple;
         height: 170px
     }
     .rightbottomDownLeft{
