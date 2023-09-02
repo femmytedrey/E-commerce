@@ -27,6 +27,7 @@ hamburger.addEventListener('click', () => {
         menu.style.display = 'block';
         overlay.style.display = 'block';
         previous.style.display = 'none';
+        cartbox.style.display = 'none';
     }
 });
 
@@ -178,7 +179,10 @@ const num = document.querySelector('.num');
 const emptyCart = document.querySelector(".emptycart");
 const middleCart = document.querySelector(".cartviewmiddleouter");
 const bottomCart = document.querySelector(".cartviewbottom");
-const quantityNumber = document.querySelector(".numOfQuantity")
+const quantityNumber = document.querySelector(".numOfQuantity");
+const quantityPrice = document.querySelector(".quantityprice");
+const deleteCart = document.querySelector(".delete");
+const checkout = document.querySelector(".checkout");
 
 let isCartVisible = false;
 let quantity = 1;
@@ -186,9 +190,11 @@ let quantity = 1;
 cartIcon.addEventListener('click', () => {
     if (!isCartVisible) {
         cartbox.style.display = 'block';
+        previous.style.display = 'none';
         isCartVisible = true;
     } else {
         cartbox.style.display = 'none';
+        previous.style.display = 'block';
         isCartVisible = false;
     }
 
@@ -197,9 +203,11 @@ cartIcon.addEventListener('click', () => {
         middleCart.style.display = 'block';
         bottomCart.style.display = 'block';
         
+        
     }
     
 });
+
 
 decrement.addEventListener('click', () =>{
     if(quantity > 1){
@@ -214,9 +222,32 @@ increment.addEventListener('click', () =>{
     
 });
 
+const price = 125;
+
 addToCart.addEventListener('click', () =>{
-    cartnum.style.display = 'block';
+    
     const inputValue = inputBox.value;
-    num.textContent = inputValue;
-    quantityNumber.textContent = inputValue;
+    const quantity = parseFloat(inputValue)
+
+    if(!isNaN(quantity)){
+        num.textContent = quantity;
+        quantityNumber.textContent = quantity;
+        const total = price * quantity;
+        const formattedTotal = total.toFixed(2);
+        quantityPrice.textContent = formattedTotal;
+        cartnum.style.display = 'block';
+    }else{
+        console.error("Invalid input for quantity");
+    }
+});
+
+deleteCart.addEventListener('click', () =>{
+    emptyCart.style.display = 'flex';
+    middleCart.style.display = 'none';
+    bottomCart.style.display = 'none';
+    cartnum.style.display = 'none';
+});
+
+checkout.addEventListener('click', () =>{
+    alert("Coming soon!!! check back later");
 });

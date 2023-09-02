@@ -519,6 +519,7 @@ svg{
     right: 60px;
     box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.3);
     display: none;
+    z-index: 10000;
 }
 
 .cartviewtop{
@@ -528,6 +529,7 @@ svg{
     align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding: 20px;
+    
 }
 .carttext{
     font-weight: 700;
@@ -580,6 +582,7 @@ svg{
 .delete{
     height: 18px;
     width: 15px;
+    cursor: pointer;
 }
 
 .cartviewbottom{
@@ -910,7 +913,7 @@ svg{
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        background: blue;
+        /* background: blue; */
     }
     .rightbottomDown{
         flex-direction: column;
@@ -942,7 +945,7 @@ svg{
         top: 42%;
         left: 10px;
         border: none;
-        z-index: 100;
+        z-index: 70;
     }
     .mobilearrowright{
         height: 50px;
